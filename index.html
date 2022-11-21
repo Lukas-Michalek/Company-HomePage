@@ -1,0 +1,287 @@
+<!-- TEXTO TO BE COPIED TO README IN GIT-->
+<!-- The goal of this exercise was to create an example of business website using flexbox properties with responsive design, so it can be viewed on different devices with good quality -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./resources/styles/reset.css">
+    <link rel="stylesheet" href="./resources/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./resources/pictures/favicon/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Business Webpage</title>
+
+</head>
+
+<body>
+    
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------        Header        --------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+    
+    <div class="header">
+    
+        <div class="navbar">
+            <div class="logo_email">
+                <div id="logo">
+                    <a href="#">
+                        <img src="./resources/pictures/logo/cat-1298141_960_720.svg">
+                    </a>
+                </div>
+                <a href="#">michalson@michalson.com</a>
+
+            </div>
+
+            <div class="upper_navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#banner_text">Services</a></li>
+                    <li><a href="#testemonials_anchor">Testimonials</a></li>
+                    <li><a href="#anchor_for_team">Our Team</a></li>
+                    <li><a href="#address">Contact Us</a></li>
+                </ul>
+            </div>
+            
+
+        </div>  <!-- End of Navbar-->
+
+        <h1 class="header_text">Michalson`s Translations and Interpreting</h1>
+
+        
+    </div>  <!-- End of Header-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------        Banner Section / Our Mission       ------------------------------------>
+    <!----------------------------------------------------------------------------------------------------------------->
+    
+    <div class="banner">
+
+        
+        <h1 id="banner_header">Breaking the language barrier since 2022!</h1>
+        <span id="banner_text">Our mission is to help your business through understanding. No matter the language!  </span>
+
+    </div>  <!-- End of Banner-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------        Services Section        ------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+    
+    <div class="services">
+        
+        <h1 id="services_main_heading">We are proud to offer services such as:</h1>
+
+        <div class="service_gallery">
+            <div class="specific_service">
+                <h3>Our Languages</h3>
+                <img src='./resources/pictures/services/different-language-7389469_1920.jpg'>
+            </div>
+
+            <div class="specific_service">
+                <h3>Language Courses</h3>
+                <img src="./resources/pictures/services/pexels-thirdman-5649514.jpg">
+            </div>
+
+            <div class="specific_service">
+                <h3>Translation Services</h3>
+                <img src="./resources/pictures/services/key-5105878_1920.jpg">
+            </div>
+
+            <div class="specific_service">
+                <h3>Law Interpreting</h3>
+                <img src="./resources/pictures/services/law-interpreting.jpg">
+            </div>
+
+            <div class="specific_service">
+                <h3>Medical Interpreting</h3>
+                <img src="./resources/pictures/services/medicine.jpg">
+            </div>
+
+            <div class="specific_service">
+                <h3>Business Interpreting</h3>
+                <img src="./resources/pictures/services/business-interpreting.jpg">
+            </div>
+
+            <div class="specific_service">
+                <h3>Over the Phone </h3>
+                <img src="./resources/pictures/services/phone-interpreting.jpg">
+            </div>
+
+            <div class="specific_service">
+                <h3>In Person</h3>
+                <img src="./resources/pictures/services/in-person.jpg">
+            </div>
+
+            
+        </div>  <!-- End of Service Gallery-->
+    
+    </div>  <!-- End of Services Section-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------        Testemonials Section        ------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="testemonials">
+        
+        <h1 id="testemonials_header">But don`t take our word for it. Ask our customers how they found our services!</h1>
+
+        <a id="testemonials_anchor">&nbsp;</a> <!-- Creating an empty anchor tag so I can navigate to the exact location I want and header is not in the way. At this time of my development I was not able to find a better solution that would do the trick-->
+    
+
+        <div class="feedback float_left">
+            <h2 class="feedback_heading">Alexander Jones</h2>
+            <p class="feedback_text">"I have to admit that I was very sceptical from the begining, but just after few meetings I can happily say that my fears were absolutely unfounded. I had the opportunity to work with very professional and yet easy going people. I had the opportunity to make some friends along the way as well"</p>
+            <div class="rating">
+                <img src="./resources/pictures/rating/favorite.png">
+                <img src="./resources/pictures/rating/favorite.png">
+                <img src="./resources/pictures/rating/favorite.png">
+                <img src="./resources/pictures/rating/favorite.png">
+                <img src="./resources/pictures/rating/favorite (1).png">
+
+            </div>
+
+        </div>
+
+        <div class="feedback float_right">
+            <h2 class="feedback_heading">Jessica Wilson</h2>
+            <p class="feedback_text">"Working with Michalson`s Interpreting was a pleasure. People were extremely helpful and I felt like I was working woth friends rather than strangers. It was overall top experience. Would always recommend!"</p>
+            <div class="rating">
+                <img src="./resources/pictures/rating/favorite.png">
+                <img src="./resources/pictures/rating/favorite.png">
+                <img src="./resources/pictures/rating/favorite.png">
+                <img src="./resources/pictures/rating/favorite.png">
+                <img src="./resources/pictures/rating/favorite.png" id="anchor_for_team">
+
+            </div>
+
+        </div>
+
+</div>  <!-- End of Testemonials-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------        Our Team Section        ----------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+    
+    <h2 id="team_heading">Meet our wonder full team!</h2>
+
+    <div class="our_team">
+       
+        
+        <div class="team_member">
+            <img src="./resources/pictures/members/lucia.jpg">
+            <h2 class="member_name">Lucia Strasa</h2>
+            <p class="member_description">Lucia is our expert for Spanish, Italian and Greek</p>
+        </div>
+
+        <div class="team_member">
+            <img src="./resources/pictures/members/jason.jpg">
+            <h2 class="member_name">Jason Wright</h2>
+            <p class="member_description">You won`t find anyone more qualified in German or Russian</p>
+        </div>
+
+        <div class="team_member">
+            <img src="./resources/pictures/members/veronica.jpg">
+            <h2 class="member_name">Veronica Monet</h2>
+            <p class="member_description">Is it French, Greek or Chinese that you require? Then Veronica is your best bet.</p>
+        </div>
+    </div>  <!-- End of Our Team-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------        Footer        ----------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <footer>
+        <div class="footer_logo">
+            <a href="#">
+                <img src="./resources/pictures/logo/cat-1298141_960_720.svg">
+            </a>
+            <h1 >Michalson`s Translations and Interpreting</h1>
+        </div>
+
+        <div class="lower_navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#banner_text">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#address">Contact Us</a></li>
+            </ul>
+
+        </div>  <!-- End of lower Navbar-->
+
+        <div class="social_networks">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./resources/pictures/icons/icons8-facebook.svg">
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./resources/pictures/icons/icons8-instagram.svg">
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="./resources/pictures/icons/icons8-linkedin.svg">
+            </a>
+    
+        </div>
+
+        <div class="footer_contacts float_right">
+            <h2>Please contact us on:</h2>
+            <div class="contact_bar" id="address">
+                <img src="./resources/pictures/icons/icons8-location-pin-66.png" alt="Location Icon">
+                <h3>123 Flower Street, London, UK</h3>
+            </div>
+
+            <div class="contact_bar" id="phone_contact">
+                <img src="./resources/pictures/icons/icons8-ringing-phone-50.png">
+                <h3>+123-456 789</h3>
+            </div>
+
+            <div class="contact_bar" id="mail">
+                <img src="./resources/pictures/icons/icons8-mail-96.png">
+                <h3>michalson@michalson.com</h3>
+            </div>
+        
+        </div>  <!-- End of footer_contacts-->
+
+        <div class="certificates float_left">
+            <h2>Our professional certifications:</h2>
+            
+            <div class="award" id="german">
+                <img src="./resources/pictures/icons/icons8-certificate-1.png">
+                <h3>Goethe Certificate C2 (GDS)</h3>
+            </div>
+
+            <div class="award" id="english">
+                <img src="./resources/pictures/icons/icons8-certificate-2.png">
+                <h3>C2 Proficiency qualification</h3>
+            </div>
+
+            <div class="award" id="french">
+                <img src="./resources/pictures/icons/icons8-certificate-3.png">
+                <h3>Diplôme d'Etudes en Langue Française</h3>
+            </div>
+
+
+        </div>  <!-- End of Certificates-->
+    </footer>
+    <!------------------------------------------------------------------------------------------------------------->
+    <!------------------------------        Copyright      -------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------->
+
+   
+
+    <div class="copyright">
+        <div id="copyright_text">Site designed by Lukas Michalek.</div>
+
+        <div>App icons by 
+            <a href="https://icons8.com/">icons8</a>.
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,459 @@
+
+/* ---------------------            Augsburger Font Face           ----------------------------------------- */
+
+@font-face {
+    font-family: 'augsburger';
+    src: url('../fonts/augsburger/augsburger-schrift-cat.regular-webfont.woff2') format('woff2'),
+         url('../fonts/augsburger/augsburger-schrift-cat.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* -------------------          Universal Styles          -------------------- */
+
+html {
+    font-size: 100%;
+   
+}
+
+body {
+    margin: 4rem 0 0 0;
+    font-family: 'augsburger', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.125rem;
+    
+}
+
+
+/* -------------------          Universal styles for All links          -------------------- */
+
+a {
+    text-decoration: none;
+    color:#00008b;
+}
+
+a:hover {
+    color: gold;
+}
+
+/* -------------------          Header Section          -------------------- */
+.header {
+    
+    background-color: #D2FF96;
+    overflow: hidden;
+    
+    
+}
+/* 
+:target {
+    display: block;    
+    position: relative;     
+    top: -100px;
+    visibility: hidden;
+} */
+
+/* .target::after {
+    content: '';
+    display: block;
+    height:      1550px;
+    margin-top: 1550px;
+} */
+
+/* a#testemonials_header::before {
+    content: '';
+    display: block;
+    height: 1550px;
+    margin: -230px 0 0;
+} */
+
+
+
+.navbar {
+    
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: #D2FF96;
+    position: fixed;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 0 3rem;
+}
+
+.header_text {
+    
+    text-align: center;
+    margin: 0 0 2rem 0;
+    
+}
+
+.logo_email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+
+}
+
+.upper_navigation ul {
+    list-style: none;
+}
+
+.upper_navigation li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+
+
+.upper_navigation {
+    display: flex;
+    justify-items: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------            Banner Section          ----------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.banner {
+    
+    background-image: url('../pictures/banner/pexels-eberhard-grossgasteiger-2310713.jpg');
+    background-position: center;
+    background-size:cover;   
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#banner_header {
+    margin: 4rem 0;
+}
+
+#banner_text {
+    margin: 0 0 5rem 0;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------            Services Section          ----------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.services {
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 10% 5%;
+    border:5px solid navy;
+ 
+
+}
+#services_main_heading {
+    margin: 3rem 0 0 0;
+}
+
+.service_gallery {
+    display: flex;
+    flex-direction: row;
+    /* padding: 5%; */
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+     
+}
+
+.specific_service img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1.25rem;
+}
+
+.specific_service{
+    margin: 1%;
+    
+}
+
+.specific_service h3{
+    padding: 0 0 1rem 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------            Testemonials Section          ----------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.testemonials{
+    margin: 2rem 5%;
+    border: 5px solid red;
+    width: 100;
+}
+
+#testemonials_header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.feedback {
+    text-align: center;
+    margin:2.5%;
+    border: 3px solid navy;
+    border-radius: 30px;
+    height:auto;
+    width: 60%;
+}
+
+.feedback_heading {
+    padding: 1rem;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.rating {
+    display: flex;
+   
+    justify-content: center;
+    margin: 2% 0 5% 0;
+}
+
+
+.rating img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.feedback_text {
+    padding: 3%;
+    font-size: 2rem;
+}
+
+
+.float_left {
+    float:left;
+}
+
+.float_right {
+    float: right;
+}
+
+.testemonials::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+/* Empty Anchor tag for Exact navigation with web page. I hope that I will find a better solution in future */
+  #testemonials_anchor {
+    margin-top:-220px;
+    padding-top: 220px;   
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------            Our Team Section          ----------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.our_team{
+    margin: 2rem 5%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+#team_heading {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.our_team > *{
+    border: 3px solid green;
+    
+}
+
+.team_member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26rem;
+    
+    height: auto;
+
+}
+
+.team_member img {
+    border-radius: 20px;
+    width: 70%;
+   
+    border: 2px solid grey;
+    margin: 10% 5%;
+
+}
+
+.member_name {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 5% 15% 5%;
+}
+
+.member_description {
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0 10% 10% 15%;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------            FOOTER          ------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+footer {
+    background-color: #D2FF96;
+    overflow: hidden;
+    border: 3px solid red;
+
+}
+
+.footer_logo {
+    margin: 2.5% auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+ 
+
+}
+
+.footer_logo img{
+    width: 9rem;
+    height: auto;
+}
+
+.lower_navbar {
+    margin: 2.5% 10%; 
+
+}
+
+.lower_navbar ul{
+
+    margin: 0;
+    padding: 0;
+    display: flex;  
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.lower_navbar li{
+    display: inline-block;
+    /* padding: 0 1rem; */
+}
+
+.lower_navbar a {
+    font-size: 2.5rem;
+}
+
+.social_networks {
+    margin: 5%;
+    display: flex;
+    gap: 3%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.footer_contacts {
+    margin: 0 12% 5% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    
+}
+
+
+.footer_contacts img{
+    width: 8%;
+    height: auto;
+}
+
+.footer_contacts h2{
+    margin: 0 0 5% 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.contact_bar {
+    display: flex;
+    gap: 5%;
+   
+    
+}
+
+.certificates {
+    margin: 0 0 5% 12%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.certificates h2 {
+    margin: 0 0 5% 0;
+    text-decoration: underline;
+
+    text-align: center;
+
+}
+
+.award {
+    display: flex;
+    gap: 5%;
+    
+}
+
+.award img{
+    width: 8%;
+    height: auto;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------            Copyright         ------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+#copyright_text {
+    font-weight: bolder;
+    letter-spacing: 0.20rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
+}
